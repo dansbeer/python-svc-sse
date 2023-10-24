@@ -1,0 +1,4 @@
+fastapi==0.95.2
+gunicorn==20.1.0
+sse-starlette==1.6.5
+starlette==0.27.0
