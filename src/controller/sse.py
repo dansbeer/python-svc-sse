@@ -9,7 +9,6 @@ async def notif_upload_endpoint(request: Request):
     async def event_generator():
         while True:
             if await request.is_disconnected():
-                print("disconnected")
                 break
             message = await broker.consume_data()
             if message:
